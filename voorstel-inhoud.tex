@@ -2,19 +2,18 @@
 
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
-Technologie wordt iedere dag steeds belangrijker in ons leven. We gebruiken technologie onder andere om ons leven aangenamer en makkelijker te maken. Ook voor een gezonde levensstijl wordt technologie de dag vandaag veel gebruikt. Zowel in de Apple als de Play store zijn er veel applicaties die mobile coaching aanbieden, niet al van deze applicaties blijken allemaal kwaliteitsvol te zijn. \hfill \break \break
-De bedoeling van dit onderzoek is om een voorstudie te doen voor applicatie ontwikkelaars in verband met mobile coaching. Dit zowel op gebruikersgemak als trainingsgebied. Vele gebruikers zijn teleurgesteld in deze applicaties en bekomen niet het gewenste resultaat. Wat willen de gebruikers in deze applicaties om hen te helpen met een gezonde levensstijl? Wat zijn absolute musts? Niet alleen functionaliteit is belangrijk maar hoeveel belang hechten mensen aan de user experience van deze applicaties?
+Technologie wordt iedere dag steeds belangrijker in ons leven. We gebruiken technologie onder andere om ons leven aangenamer te maken. Zowel in de Apple als de Play store zijn er veel applicaties die mobile coaching aanbieden, het doel van deze applicaties is om een gezondere levensstijl te hanteren. Uit onderzoek blijkt dat niet alle applicaties even kwaliteitsvol zijn. \hfill \break \break
+De bedoeling van dit onderzoek is om een voorstudie te doen voor applicatie ontwikkelaars om betere mobile coaching applicaties te bouwen met behulp van de community.Want veel gebruikers zijn teleurgesteld in deze applicaties en bekomen niet hun gewenst resultaat. Wat willen de gebruikers in deze applicaties? Wat zijn absolute musts? En kunnen we aan de hand van de antwoorden voorspellen welke applicatie bij welke gebruiker past met behulp van machine learning?
 
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{literatuurstudie }
 \label{sec:state-of-the-art}
-In 2015 is een vergelijkende studie gemaakt namelijk \textcite{JMIR2015}  omtrent mobile coaching applicaties die om dat moment op de markt waren. Het onderzoek werkt met een schaal waarin ze applicaties vergelijken met vooraf bepaalde richtlijnen. Uit het onderzoek blijkt dat slechts een klein procent aan alle richtlijnen voldoet om de gezondheid niet te schaden. In de applicaties staan de gebruikers vaak niet centraal en de applicaties zijn te commercieel ingericht. \break
-\break
-Mobile coaching is een veel ruimer begrip dan enkel maar bewegen en kracht oefeningen, voor een gezonde levensstijl is veel meer nodig. In \textcite{EQUILIBRIO2005}  wordt ' life management system ' omschreven waarin kracht oefeningen en voedingsschema's centraal staan om een gezonde levensstijl te creëren. In het onderzoek gaat me er van uit dat je door dit te combineren een beter en gelukkiger leven zal hebben. \break
+In 2015 is een vergelijkende studie gedaan, namelijk \textcite{JMIR2015}. Het onderzoek bestudeerde mobile coaching applicaties die om dat moment op de markt waren. Er wordt gewerkt met een schaal waarin men applicaties vergelijken met vooraf vastgelegde richtlijnen. Uit de conclusie blijkt dat slechts een klein procent aan alle richtlijnen voldoet. Het is belangrijk bij dit type applicaties dat de gebruiker centraal staat. \break\break
+Onder de noemer mobile coaching valt meer dan bewegingsoefeningen, voor een gezonde levensstijl is veel meer nodig. In \textcite{EQUILIBRIO2005}  wordt ' life management system ' omschreven waarin krachtoefeningen en voedingsschema's centraal staan om een gezonde levensstijl te evenaren.\textcite{EQUILIBRIO2005} beschrijft dat je door deze combinatie een gelukkiger leven zal leiden. \break
  \break
-We kunnen dus vaststellen dat veel mobiele applicaties niet voldoen aan fundamentele aanbevelingen voor de gezondheid op vlak van beweging. Er zijn 3 goede indicators waar ontwikkelaars voor deze applicaties best rekening mee houden, namelijk: het FITT-principe\footnote{Frequency Intensity Type en Time’: hoe vaak , hoe intensief en hoe lang wordt er getraind?
+We stellen dus vast dat veel mobiele applicaties niet voldoen aan fundamentele aanbevelingen voor de gezondheid. Er zijn 3 goede indicators waar ontwikkelaars voor dit type applicaties best rekening mee houden, namelijk: het FITT-principe\footnote{Frequency Intensity Type en Time’: hoe vaak , hoe intensief en hoe lang wordt er getraind?
 }, veiligheid en structuur.
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
@@ -33,32 +32,35 @@ Dit onderzoek omtrent mobile coaching zal geen applicaties vergelijken maar gebr
 \begin{itemize}
 \item Wat is uw geslacht?
 \item Wat is uw leeftijd?
-\item Hoe belangrijk is het gebruiksgemak van een mobiele applicatie?
-\item Hoe belangrijk is het uitzicht van een applicatie?
-\item Gebruikt u een applicatie voor uw gezondheid?
+\item Hoe vaak sport u per week?
+\item Hoe beoefent u meestal lichaamsbeweging?
+\item Welk besturingssysteem heeft uw smartphone?
+\item Hoe belangrijk vindt u het uitzicht en gebruiksgemak van een applicatie?
+\item Heeft u al betalende applicaties gedownload?
+\item Heeft u al een mobile coaching applicatie gebruikt?
+\item Vindt u reclame in applicaties storend?
+\item Ik kies voor een Mobile Coaching applicatie waarin ik...  
 \begin{itemize}
-\item Indien niet zou u in de toekomst graag een applicatie gebruiken?
+\item enkel voedingsschema's krijg.
+\item enkel trainingsschema's krijg.
+\item voeding- en trainingschema's krijg.
 \end{itemize}
-\item Wat wil u bijhouden in de applicatie:
-\begin{itemize}
-\item Wil u voedingswaarden bijhouden?
-\item Wil u trainingsschema's bijhouden?
-\item Wil u illustraties bij oefeningen met de juiste voorgetoonde beweging? ( video's of afbeeldingen) 
+\item Wat is uw hoofddoel bij het gebruik van een Mobile Coaching applicatie?
+\item Ik vind extra uitleg of filmpjes bij oefeningen...?
+\item Welke applicatie past best bij mij?
 \end{itemize}
-\end{itemize}
-Dit zijn een aantal indicatie vragen om aan te tonen welke richting dit onderzoek zal uitgaan, dit kan natuurlijk nog verder uitgebreid worden en de vragenlijst is nog niet definitief. De resultaten van de enquête zullen in een CSV-bestand worden gegoten die later kunnen worden verwerkt in \textcite{RStudio} .
- Als de gegevens eenmaal uitgewerkt zijn in \textcite{RStudio} kunnen we onder andere  beginnen met een rangschikking wat gebruikers belangrijk vinden en wat niet. We kunnen ook verschillende types gebruikers gaan onderzoeken en een verband met hun antwoorden enzovoort.\hfill \break \break
- De enquête zal zowel digitaal als op papier beschikbaar gesteld worden. De enquête zal gedeeld worden op Fora, \textcite{Facebook} groepen over gezondheid en in bepaalde fitnesscentra.
+ De vragenlijst zal hoofdzakelijk digitaal beschikbaar gesteld worden op \textcite{Facebook} en gezondheidsfora.  Voor het onderzoek zal zelfgemaakte een PHP-omgeving voorzien worden waarin de antwoorden opgeslagen worden in een CSV-bestand. \hfill \break \break 
+ In het tweede deel van het onderzoek zal een \textcite{Python} omgeving opgezet worden om machine learning toe te passen. Er zal een model met neuronen getraind worden met \textcite{Keras} en onderliggend \textcite{TensorFlow}. Het model zal dagelijks 2 keer getraind worden met data. Eens het model voldoende getraind is, zal het in staat zijn om voorspellingen te doen met nieuwe data.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
-Het zou zeker bevorderend zijn voor het onderzoek moeten we meer dan 100 resultaten mogen verwachten. Bij dit aantal kunnen we al een mooie conclusie vormen over wat de deelnemers van de enquête hebben geantwoord op de vragenlijst. \hfill \break \break
-Er moet een duidelijk beeld kunnen gevormd worden van verschillende types gebruikers. Dit zal gebeuren enerzijds gebeuren aan de hand van de leeftijd en het geslacht en anderzijds zal er gekeken worden welke bedoeling de eind gebruiker heeft. Wil de eindgebruiker afvallen of spieren opbouwen? Heeft de gebruiker ervaring met voeding- en trainingsschema's? Dit kan een verschil zijn qua 'usergoal' en daarom wordt er verwacht dat er tussen deze groepen een duidelijk waarneembaar verschil zal zijn in de antwoorden op de enquête. Er moet ook gezorgd worden dat er voldoende deskundige personen de enquête afleggen, bijvoorbeeld dokters, personal coaches, diëtisten, enzovoort...\hfill \break \break
-De verwachtingen van dit onderzoek zijn dat dit in de toekomst kan gebruikt worden als basis voor een applicatie in verband met mobile coaching. 
+Om correcte voorspellingen te doen met machine learning zijn veel resultaten noodzakelijk. Hoe meer antwoorden we krijgen uit onze vragenlijst, hoe accurater onze machine een voorspelling zal kunnen doen. Indien er niet genoeg resultaten zijn zal alles toch uitgewerkt worden maar dan als proof-of-concept.
+\hfill \break \break
+
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
-De conclusie hangt natuurlijk af van de hoeveelheid antwoorden en de antwoorden zelf op onze vragenlijst. Verder wordt er verwacht dat de gebruikers 'user experience' boven de functionaliteit verkiezen. Iets wat professioneel oogt zal meestal als goed in het algemeen bestempeld worden. \hfill \break \break Er wordt ook verwacht dat de gebruikers graag met verschillende niveaus willen werken. Bijvoorbeeld kan er een keuze gemaakt worden tussen beginner of gevorderde gebruiker en afhankelijk van die keuze en andere gegevens van de gebruiker, zoals leeftijd en gewicht, zal de applicatie gepaste oefeningen en trainingsschema's genereren. Op deze manier zal iedere gebruiker zich comfortabel voelen bij elke training en maaltijd en dat is tenslotte allemaal waar het om draait.
+De conclusie hangt af van het aantal deelnemers aan het onderzoek. Verder wordt er verwacht dat de gebruikers 'user experience' boven de functionaliteit verkiezen. Iets wat professioneel oogt zal meestal als goed in het algemeen bestempeld worden. Er wordt verwacht dat men duidelijk gebruikers kan onderverdelen in verschillende groepen aan de hand de vragenlijst. \hfill \break \break 
 
